@@ -47,7 +47,7 @@ Now that we have a better understanding of a gradient, let's apply our understan
 
 $$f(x,y) = 2x + 3y $$
 
-![](./images/3dx3y.png)
+<img src="./images/new_gradDescinDesc.png" width="400">
 
 Imagine being at the bottom left of the graph at the point $x = 1$, $y = 1$.  What would be the direction of steepest ascent?  It seems, just sizing it up visually, that we should move both in the positive $y$ direction and the positive $x$ direction.  Looking more carefully, it seems we should move **more** in the $y$ direction than the $x$ direction.  Let's see what our technique of taking the partial derivative indicates.   
 
@@ -59,7 +59,7 @@ So what this tells us is to move in the direction of greatest ascent for the fun
 
 ![](./images/gradient-plot.png)
 
-![](./images/3dx3y.png)
+<img src="./images/new_gradDescinDesc.png" width="400">
 
 So this path maps up well to what we see visually.  That is the idea behind gradient descent.  The gradient is the partial derivative with respect to each type of variable of a multivariable function, in this case $x$ and $y$.  And the importance of the gradient is that its direction is the direction of steepest ascent.  The negative gradient, that is the negative of each of the partial derivatives, is the direction of steepest descent.  So our direction of gradient descent for the graph above is $x = -2$, $y = -3$.  And looking at the two graphs above, it seems that the steepest downward direction is just the opposite of the steepest upward direction.  We get that by mathematically by simply taking the multiplying our partial derivatives by negative one.
 
