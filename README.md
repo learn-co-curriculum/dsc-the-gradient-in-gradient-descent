@@ -23,7 +23,7 @@ Now moving in the direction of greatest ascent for a function $f(x,y)$, means th
 
 Note how this is a different task from what we have previously worked on for multivariable functions.   So far, we have used partial derivatives to calculate the **gain** from moving directly in either the $x$ direction or the $y$ direction.  
 
-> Here in finding gradient ascent, our task is not to calculate the gain from a move in either the $x$ or $y$ direction.  Instead our task is to **find some combination of a change in $x$,$y$ that brings the largest change in output**.  
+> Here, in finding gradient ascent, our task is not to calculate the gain from a move in either the $x$ or $y$ direction.  Instead, our task is to **find some combination of a change in $x$,$y$ that brings the largest change in output**.  
 
 So if you look at the path our climbers are taking in the picture above, *that* is the direction of gradient ascent.  If they tilt their path to the right or left, they will no longer be moving along the steepest upward path.
 
