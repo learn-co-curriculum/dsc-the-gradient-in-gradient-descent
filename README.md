@@ -12,8 +12,7 @@ Well, that's what we hope to show in this lesson: explain how we can use partial
 ## Objectives
 
 You will be able to:
-- Understand how partial derivatives apply to gradient descent
-- Understand what a gradient is
+- Define a gradient in relation to gradient descent
 
 ## What is the gradient?
 
