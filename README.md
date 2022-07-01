@@ -1,4 +1,3 @@
-
 #  The Gradient in Gradient Descent
 
 ## Introduction
@@ -35,7 +34,7 @@ Now how do we find the direction for the greatest rate of increase?  We use part
 
 As we know, the partial derivative  <img src="https://render.githubusercontent.com/render/math?math=\frac{df}{dx}"> calculates the change in output from moving a little bit in the  <img src="https://render.githubusercontent.com/render/math?math=x"> direction, and the partial derivative  <img src="https://render.githubusercontent.com/render/math?math=\frac{df}{dy}"> calculates the change in output from moving in the  <img src="https://render.githubusercontent.com/render/math?math=y"> direction.  Because with gradient ascent our goal is to make a nudge in  <img src="https://render.githubusercontent.com/render/math?math=x, y"> that produces the greatest change in output, if  <img src="https://render.githubusercontent.com/render/math?math=\frac{df}{dy} &gt; \frac{df}{dx}"> , we should make that move more in the  <img src="https://render.githubusercontent.com/render/math?math=y"> direction than the  <img src="https://render.githubusercontent.com/render/math?math=x"> direction, and vice versa.  That is, we want to get the biggest bang for our buck.  
 
-<img src="images/Denali.jpg">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-the-gradient-in-gradient-descent/master/images/Denali.jpg">
 
 Let's relate this again to mountain climbers. Imagine the vertical edge on the left is our y-axis and the horizontal edge is on the bottom is our x-axis.  For the climber in the yellow jacket, imagine his step size is three feet. A step straight along the y-axis will move him further upwards than a step along the x-axis.  So in taking that step, he should direct himself more towards the y-axis than the x-axis.  That will produce a bigger increase per step size.
 
@@ -47,7 +46,7 @@ Now that we have a better understanding of a gradient, let's apply our understan
 
  <img src="https://render.githubusercontent.com/render/math?math=f(x,y) = 2x %2b 3y "> 
 
-<img src="images/new_gradDescinDesc.png" width="400">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-the-gradient-in-gradient-descent/master/images/new_gradDescinDesc.png" width="400">
 
 Imagine being at the bottom left of the graph at the point  <img src="https://render.githubusercontent.com/render/math?math=x = 1"> ,  <img src="https://render.githubusercontent.com/render/math?math=y = 1"> .  What would be the direction of steepest ascent?  It seems, just sizing it up visually, that we should move both in the positive  <img src="https://render.githubusercontent.com/render/math?math=y"> direction and the positive  <img src="https://render.githubusercontent.com/render/math?math=x"> direction.  Looking more carefully, it seems we should move **more** in the  <img src="https://render.githubusercontent.com/render/math?math=y"> direction than the  <img src="https://render.githubusercontent.com/render/math?math=x"> direction.  Let's see what our technique of taking the partial derivative indicates.   
 
@@ -57,9 +56,9 @@ The gradient of the function  <img src="https://render.githubusercontent.com/ren
 
 So what this tells us is to move in the direction of greatest ascent for the function  <img src="https://render.githubusercontent.com/render/math?math=f(x,y) = 2x %2b 3y "> , is to move up three and to the right two.  So we would expect our path of greatest ascent to look like the following.
 
-<img src="images/gradient-plot.png" width="400">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-the-gradient-in-gradient-descent/master/images/gradient-plot.png" width="400">
 
-<img src="images/new_gradDescinDesc.png" width="400">
+<img src="https://raw.githubusercontent.com/learn-co-curriculum/dsc-the-gradient-in-gradient-descent/master/images/new_gradDescinDesc.png" width="400">
 
 So this path maps up well to what we see visually.  That is the idea behind gradient descent.  The gradient is the partial derivative with respect to each type of variable of a multivariable function, in this case  <img src="https://render.githubusercontent.com/render/math?math=x"> and  <img src="https://render.githubusercontent.com/render/math?math=y"> .  And the importance of the gradient is that its direction is the direction of steepest ascent.  The negative gradient, that is the negative of each of the partial derivatives, is the direction of steepest descent.  So our direction of gradient descent for the graph above is  <img src="https://render.githubusercontent.com/render/math?math=x = -2"> ,  <img src="https://render.githubusercontent.com/render/math?math=y = -3"> .  And looking at the two graphs above, it seems that the steepest downward direction is just the opposite of the steepest upward direction.  We get that by mathematically by simply taking the multiplying our partial derivatives by negative one.
 
